@@ -23,6 +23,7 @@ nav span {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   position: fixed;
   text-decoration: underline;
   align-items: center;
@@ -55,34 +56,31 @@ header nav {
 /* Our Mission */
 
 #mission {
-  display: inline-block;
-  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 700px;
+  width: 1200px;
   background-image: url("../images/img-mission-background.jpg");
 }
 
 #mission .mission-banner {
-  display: flex;
-  align-items: center;
-  height: 700px;
+  background-color: black;
+  height: 125px;
   width: 1200px;
 }
 
-#mission .mission-banner h2,
-#mission .mission-banner h4 {
-  width: 1200px;
-  background-color: black
-}
 
 /* Featured Teas */
 
 #featured-tea {
-  display: inline-block;
+  margin: auto;
   width: 1000px;
-  align-content: center;
 }
 
 #featured-tea .image-content {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -98,6 +96,7 @@ header nav {
 /* Locations */
 
 #locations {
+  margin: auto;
   background-image: url("../images/img-locations-background.jpg");
   height: 500px;
   width: 1200px;
@@ -106,7 +105,8 @@ header nav {
 
 #locations .specifics {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .downtown,
@@ -117,7 +117,6 @@ header nav {
   background-color: black;
   width: 300px;
   opacity: 1;
-
 }
 
 /* Footer */
